@@ -2,8 +2,206 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<header class="header">
+    <div class="header__item">
+        <label class="gray-text">➢Екатеринбург</label>
+    </div>
+    <div class="header__item">
+        <input type="checkbox" id="setting" class="none"/>
+        <label for="setting">Настройки</label>
+        
+        <div class="header__item-model" id="model-okno">
+            <div>
+                <input type="checkbox" id="attendance-in" checked/>
+                <label for="attendance-in">Посещаемость</label>
+            </div>                
+            <div>
+                <input type="checkbox" id="best-jokes-in" checked/>
+                <label for="best-jokes-in">Лучшие анекдоты</label>
+            </div>
+            <div>
+                <input type="checkbox" id="tv-program-in" checked/>
+                <label for="tv-program-in">ТВ программы</label>
+            </div>
+            <div>
+                <input type="checkbox" id="automotive-news-in" checked/>
+                <label for="automotive-news-in">Автомобильные новости</label>
+            </div>
+            <div>
+                <input type="checkbox" id="weather-in" checked/>
+                <label for="weather-in">Погода</label>
+            </div>
+            <div>
+                <input type="checkbox" id="traffic-jams-in" checked/>
+                <label for="traffic-jams-in">Пробки</label>
+            </div>
+            <div>
+                <input type="checkbox" id="map-ekb-in" checked/>
+                <label for="map-ekb-in">Карта Екатеринбурга</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="poster-in" checked/>
+                <label for="poster-in">Афиша</label>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="header__item block">
+        <p class="login">login</p>
+        <label>Почта <b>133</b></label>
+    </div>
+</header>
+
+<main class="wrapper">
+    <div class="basic">
+        <div class="news__wrapper">
+            <div class="basic__news double">
+                <ul class="basic__news-ul">
+                    <p class="basic__news-title">Сейчас B CMИ 
+                        <label class="smoke">в Екатеринбурге</label>
+                        <label class="gray-text small">1 июня, суббота 9:24</label>
+                    </p>
+                    <li>В Кремле ответили на слова экс-главы ЦРУ о «запуганном» Путиным Трампе</li>
+                    <li>Число жертв землетрясения в Иране и Ираке превысила 350 человек</li>
+                    <li>Вероятной целью проникновения в РФ украинского дрона назвали шпионаж</li>
+                    <li>Кремль рассказал о местонахождении не явившегося в суд Сечина</li>
+                    <li>Кремль прокомментировал перенос послания Путина Федеральному собранию</li>
+                </ul>
+            <span class="inline">
+                <b>USD ЦБ </b>59,18  
+                <label class="gray-text"> -0,10 </label>&nbsp;
+                <b> EUR Ц5 </b>68,82  
+                <label class="gray-text"> - 9,05 </label>&nbsp;
+                <b> НЕФТЬ </b>63,44  
+                <label class="gray-text"> -0,27% &nbsp ― </label>
+            </span>
+            </div>
+
+            <div class="basic__news common">
+                <img src="/reclamaTwo.jpg" alt="reclama1" class="">
+                <p class="basic__news-title">30 Гб студентам<br> на Яндекс.Диске</p>
+                <p class="simple-text">Бесплатно и навсегда</p>
+            </div>
+        </div>            
+
+        <div class="search-bar">                
+            <div class="search-bar__image">
+                <img class="image" src="/2.png" alt="yandex">
+            </div>
+
+            <div class="search-bar__list">
+                <a href="" class="links">Видео</a>
+                <a href="" class="links">Картинки</a>
+                <a href="" class="links">Новости</a>
+                <a href="" class="links">Карты</a>
+                <a href="" class="links">Маркет</a>
+                <a href="" class="links">Переводчик</a>
+                <a href="" class="links">Музыка</a>
+                <a href="" class="links">еще</a>
+            </div>
+
+            <div class="bar">
+                <input type="text" class="bar__input">
+                <button class="bar__button">Найти</button>
+                <label  class="bar__string">Найдется всe.Например,<label class="gray-text"> выхожу один я на дорогу</label> </label>
+            </div>             
+        </div>
+                    
+        <div class="news__wrapper">
+            <div class="basic__news aside-block"></div>
+            <div class="advertisement">
+                <img src="/reclamaOne.jpg" alt="reclama1" class="">
+            </div>                                
+            <div class="basic__news" id="attendance">
+                <p class="basic__news-title">Посещаемое</p>
+                <p> <b>Маркет</b> —  китайская распродажа <br>
+                    <b>Авто.ру</b> — Туссан третьей серии <br>
+                    <b>Недвижимость</b> —  продажа студии <br>
+                    <b>Работа</b> —  охранником <br>
+                    <b>Здоровье</b> —  врач на связи <br>
+                    <b>Коллекции</b> — как мелировать волосы <br>
+                    <b>Авиабилеты</b> — из Екатеринбурга <br>
+                </p>
+            </div>
+            <div class="basic__news supplemented" id="tv-program">
+                <p class="basic__news-title">Телепрограмма <img src="/tv.jpg"></p>
+                <p>16:00 Понять. Простить <label class="gray-text">41 Домашний</label><br>
+                    16:30 Место встречи <label class="gray-text"> НТВ</label><br>
+                    16:30 Детективы <label class="gray-text"> Пятый канал</label><br>
+                    16:30 Новости <label class="gray-text"> РЕН ТВ</label><br>
+                    16:30 Гадалка <label class="gray-text"> ТВ-3</label><br>
+                    16:30 Реальные пацаны <label class="gray-text"> ТНT</label><br>
+                </p>
+
+            </div>
+            <div class="basic__news average" >
+                <div class="" id="weather">
+                    <p class="basic__news-title">Погода 🌤️<label class="close-inline"> +23 &ordm;C</label></p>
+                    <p>
+                        Вечер +15, ночь +12
+                    </p>
+
+                </div>
+
+                <div class="" id="traffic-jams">
+                    <p class="basic__news-title">Пробки 🚦<label class="close-inline"> 4 балла</label></p>
+                    <p>Местами затруднения</p>
+                </div>
+
+                
+                    <div class="" id="map-ekb">
+                        <p class="basic__news-title">Карта Екатеринбурга</p>
+                        <p><b>Такси расписание</b> <br>
+                            <b>Междугородные автобусы</b>
+                        </p>
+                    </div>
+
+                    <div class="" id="poster">
+                        <p class="basic__news-title">Афиша</p>
+                        <p> Субурбикон <label class="gray-text" >премьера в чт</label><br>
+                            Последний богатырь <label class="gray-text"> приключения</label><br>
+                            Фиксики: Большой секрет <label class="gray-text"> мультфильм</label><br>
+                            Тор: Рагнарёк <label class="gray-text"> фэнтези</label><br>
+                            Убийство в Восточном....&nbsp;<label class="gray-text"> драма</label><br>
+                            <b>Концерт — Brainstorm</b>                        
+                        </p>
+
+                    </div>
+            </div>
+            
+            <div class="basic__news" id="best-jokes">
+                <p class="basic__news-title">Лучшие анекдоты</p>
+                <p>Раздел:<a class="links" > Медицинские .</a><br>
+                    - Вас лечить хорошо или бесплатно?
+                </p>
+            </div>
+            <div class="basic__news supplemented" id="automotive-news">
+                <p class="basic__news-title">Автомобильные новости</p>
+                <p>
+                    Правительство поддержало законопроект о регистрации машиномест <label class="gray-text">12:19</label><br>
+                    Обзор нового Mitsubishi, за которым выстроилась очередь <label class="gray-text">12:01</label><br>
+                    «Лады» оснастят системой управления со смартфона <label class="gray-text">11:40</label><br>
+                    В Китае представили спорткар с двигателем от Focus RS <label class="gray-text">11:30</label><br>
+                    Священник отчитал прихожан, а они заставили его продать Parsche <label class="gray-text">12:11</label><br>
+                    Что известно о Lada Iskra: дата выхода и характеристики новой модели <label class="gray-text">13:05</label><br>
+                    С 1 июня опять нельзя ездить на шинах с шипами. Что будет со штрафами <label class="gray-text">13:36</label><br>
+                    Новые BMW, Mercedes и VW попали в Россию: что за модели и сколько стоят <label class="gray-text">13:40</label><br>
+                </p>
+            </div>           
+            
+            
+        </div>
+        
+
+    </div>
+    
+</main>
 </body>
 </html>

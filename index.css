@@ -1,0 +1,268 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: grid;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 10% 10%;
+    inset: 0;
+    height: 50px;
+    line-height: 50px;     
+}
+
+.header__item {
+    max-height: 70px;
+    inset: 0;
+}
+
+.header__item-model {
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    width: 180px;
+    line-height: 1.1;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(175, 173, 173, 0.364);
+    box-shadow: 1px 3px #cccccd6d;
+}
+
+.none {
+    display: none;
+}
+
+.none:checked ~ #model-okno {
+    display: block;
+}
+
+.block {
+    padding: 0 5px 5px 5px;
+    line-height: 1.1;
+    border: 1px solid rgba(175, 173, 173, 0.364);
+}
+
+.login {
+    font-weight: 600;
+
+    &::first-letter {
+        color: red;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto 15%;
+}
+
+.basic {
+    display: grid;
+    gap: 10px;
+}
+
+.basic__news {
+    padding: 0 20px 10px 10px;
+    line-height: 1.7;
+    font-size: smaller;
+    overflow-y: auto;
+}
+
+.supplemented {
+    width: 70%;
+    height: 95%;
+
+}
+
+.left {
+    order: 1;
+    background-color: rgb(192, 119, 23);
+}
+
+.right {
+    order: 2;
+    background-color: rgb(5, 121, 20);
+}
+
+.basic__news-title {
+    color: #1d4fb4;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.close-inline {
+    font-weight: 600;
+    color: black;
+}
+
+.search-bar {
+    display: grid;  
+    grid-template-columns: 15% auto  auto ;
+    grid-template-rows: repeat(1, 35%) repeat(2, 45% );
+}
+
+.search-bar__image {
+    grid-row: 1 / 4;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+    width: 90%;
+}
+
+.search-bar__list {
+    display: grid;
+    grid-template-columns: repeat(5, 8%) repeat(1, 11%) repeat(2, 8%);
+    grid-column: 2 / 4;
+    padding-top: 2%;
+}
+
+.links {
+    color: #1d4fb4;
+    text-decoration: none;
+}
+
+.smoke {
+    color: #1d4fb49b;
+}
+
+.gray-text {
+    color: rgb(165, 165, 165);
+}
+
+.small {
+    font-size: 12px;
+}
+
+.bar {
+   display: grid; 
+   grid-template-areas: "A" "B";
+   grid-template-columns: 90% auto;
+   grid-column: 2 / 4;
+}
+
+.bar__input {
+    margin-top: 5px;
+    height: 35px;
+    border: 2px solid rgb(252, 211, 76);
+}
+
+.bar__button {
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 13px 13px 0;
+    background-color: rgb(252, 211, 76);
+    height: 40px;
+}
+
+.bar__string {
+    grid-area: B;
+    font-size: smaller;
+}
+
+.news__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 15%) repeat(3, auto);
+}
+
+.basic__news-ul {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.inline {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 40px;
+}
+
+.common {
+    grid-column: 4 / 4;
+    line-height: 0.9;
+
+}
+
+.double {
+    grid-column: 2 / 4;
+    height: max-content !important;
+}
+
+.advertisement {
+    grid-column: 2 / 5;
+    height: 120px;
+}
+
+.average {
+    grid-column: 4 / 4;
+    grid-row: 2 / 4;
+    width: 250px;
+}
+
+.aside-block {
+    grid-column: 1 ;
+    grid-row: 1 / 4;
+
+}
+
+:root:has(#attendance-in:not(:checked)) #attendance {
+    display: none;
+}
+
+:root:has(#best-jokes-in:not(:checked)) #best-jokes {
+    display: none;
+}
+
+:root:has(#tv-program-in:not(:checked)) #tv-program {
+    display: none;
+}
+
+:root:has(#automotive-news-in:not(:checked)) #automotive-news {
+    display: none;
+}
+
+:root:has(#weather-in:not(:checked)) #weather {
+    display: none;
+}
+
+:root:has(#traffic-jams-in:not(:checked)) #traffic-jams {
+    display: none;
+}
+
+:root:has(#map-ekb-in:not(:checked)) #map-ekb {
+    display: none;
+}
+
+:root:has(#poster-in:not(:checked)) #poster {
+    display: none;
+}
+
+.supplemented::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd13;
+}
+  
+.supplemented::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #e8e8e811;
+}
+  
+.supplemented::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(193, 193, 193, 0.117);
+    border-radius: 10px;
+    background-color: #f9f9fd47;
+}
+
+.supplemented:hover,
+.supplemented:focus-within {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
